@@ -57,6 +57,14 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "staging": {
+                "fileReplacements": [
+                    {
+                      "replace": "src/environments/environment.ts",
+                      "with": "src/environments/environment.staging.ts"
+                    }
+                ]
             }
           }
         },
@@ -68,6 +76,9 @@
           "configurations": {
             "production": {
               "browserTarget": "multiple-envs:build:production"
+            },
+            "staging": {
+                "browserTarget": "multiple-envs:build:staging"
             }
           }
         },
